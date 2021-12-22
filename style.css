@@ -1,0 +1,159 @@
+/* CSS reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: open sans;
+}
+
+/* Navbar section */
+nav {
+    background-color: white;
+    padding: 0px 34px;
+    height: 79px;
+    position:sticky;
+    top: 0;
+    display: flex;
+    box-shadow: 0px 0px 5px grey;
+}
+.nav-links-left a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 8px;
+    font-size: 13px;
+    
+}
+.nav-links-left a:hover {
+    border-bottom: 2px solid #DD7F61;
+}
+
+nav #logo {
+    width: 280px;
+}
+.nav-links-left {
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-logo {
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav-logo img:hover {
+    cursor: pointer;
+}
+.nav-links-right {
+    width: 33.3%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.nav-links-right img {
+    height: 20px;
+    margin-left: 20px;
+}
+.nav-links-right img:hover {
+    cursor: pointer;
+}
+
+/* Chat button */
+/* #chat-button {
+    position: sticky;
+    z-index: 5;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+} */
+
+/* Home section */
+.home img {
+    width: 100%;
+    top: 0;
+    margin: auto;
+    display: block;
+}
+
+/* Categories section */
+#category-section {
+    border-top: 10px solid white;
+    background-color: #EFEFEF;
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content:space-evenly;
+}
+#category-section h2 {
+    font-size: 3.5rem;
+    font-family: Scheherazade New;
+    font-weight: 300;
+}
+
+.categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.categories span {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.categories span img:hover {
+    cursor: pointer;
+}
+.categories span img {
+    height: 10em;
+    padding: 0em 1em;
+}
+.categories span p {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+.categories span p:hover {
+    cursor: pointer;
+}
+
+/* Products section */
+.product-heading h2 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    font-family: Scheherazade New;
+    padding: 0.7em 0em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.product-type {
+    font-size: 1.5rem;
+    border-bottom: 3px solid #DD7F61;
+}
+.product-grid {
+    width: 100%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+
+}
+.product-grid .sofa {
+    padding: 20px;
+}
+.product-grid .sofa img {
+    width: auto;
+}
+.product-grid .sofa img:hover {
+    box-shadow: 0px 0px 10px grey;
+}
+.product-grid .sofa p:hover {
+    cursor: pointer;
+}
